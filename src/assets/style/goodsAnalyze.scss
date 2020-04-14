@@ -1,0 +1,209 @@
+#main {
+  padding: 0 vw(10);
+  margin-top: vw(10);
+}
+.mm-content{
+  padding: 0 vw(10);
+  margin-top: vw(10);
+}
+.brand_box{
+  padding: 0 vw(10);
+  height: vw(30);
+  background: #fff;
+  font-size: vw(13);
+  border-top: 1px solid $border_color;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .brand{
+    margin-right: vw(10);
+    font-size: vw(14) !important;
+  }
+  .yd-checkbox{
+    display: inline-flex;
+    align-items: center;
+    padding-right: vw(10);
+    .yd-checkbox-text{
+      font-size: vw(14);
+      color: #2c3e50;
+    }
+  }
+  .brand_fiter{
+    position: absolute;
+    right: vw(15);
+    top:50%;
+    transform: translateY(-50%);
+  }
+}
+
+.rank{
+  .list_header {
+    margin-top: 0;
+  }
+}
+//筛选
+.rank_fiter{
+  .van-cell__value{
+    text-align: center;
+    color: #FC636F !important;
+  }
+  .van-collapse-item__content {
+    .van-button {
+      width: vw(100);
+      background: #F1F2F6;
+      border-radius: vw(5);
+      border: 1px solid #F1F2F6;
+    }
+
+    .flex_collapse {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .van-button {
+        margin-top: vw(10);
+      }
+    }
+
+    .select_account {
+      height: 30px;
+      line-height: 30px;
+      float: right;
+    }
+
+    .select_btn {
+      color: #FC636F;
+      border-color: #FC636F;
+      background: #fff;
+    }
+  }
+
+  #reset {
+    margin-right: vw(15);
+    background: $body_background_color;
+    color: #1989fa;
+  }
+
+  ._input {
+    height: vw(30);
+    line-height: vw(25);
+    border: 1px solid #ccc;
+    border-radius: vw(5);
+    margin-bottom: vw(10);
+    display: inline-block;
+    position: relative;
+    width: vw(180);
+    padding-right: vw(25);
+    input{
+      width: 100%;
+      height: 100%;
+      padding-left: vw(10);
+      border: none;
+    }
+    .van-icon-close{
+      position: absolute;
+      right: vw(5);
+      top:50%;
+      transform: translateY(-50%);
+    }
+  }
+  .category_search{
+    float: right;
+    height: vw(30);
+    line-height: vw(30);
+    color: $theme-color;
+    font-size: vw(14) !important;
+  }
+
+  .category_nodata{
+    text-align: center;
+    flex-grow: 1;
+    height: vw(40);
+    line-height: vw(40);
+  }
+  .category_search:active,.van-icon-close:active{
+    opacity: .6;
+  }
+
+}
+.color_theme {
+  color: $theme-color !important;
+}
+
+.color_red {
+  color: #FC636F !important;
+}
+.fw{
+  font-weight: bold;
+  color: #333;
+}
+
+.van-button:active::before{
+  opacity: .4 !important;
+  background: #fff;
+  border-color: #fff;
+}
+
+//图表样式
+.chart_box {
+  width: 100%;
+  height: vw(260);
+  line-height: vw(250);
+  text-align: center;
+  font-size: vw(30);
+  background: #fff;
+  border: 1px solid $border_color;
+  //border-top: vw(8) solid $border_color;
+  color: #ddd;
+  padding: vw(5) 0;
+  .chart {
+    width: 100%;
+    height: vw(235);
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  .no_data {
+    height: vw(30);
+    font-size: vw(30);
+    font-weight: 400;
+  }
+}
+
+//表格
+/*表头*/
+.tableHead {
+  margin-top: vw(8);
+  height: auto;
+  color: $gray_color;
+  border-bottom: 1px solid $tableBorder;
+}
+
+.table {
+  font-size: vw(13);
+  height: auto;
+  background: #fff;
+  table {
+    width: 100%;
+    td {
+      border-bottom: 1px solid $tableBorder;
+      font-size: vw(13);
+      text-align: center;
+      height: vw(30);
+      line-height: vw(30);
+      text-overflow: ellipsis;
+      vertical-align: middle;
+    }
+  }
+}
+.table_border_right{
+  border-right: 1px solid $tableBorder;
+}
+.table_color_gray{
+  color: $gray_color;
+  font-weight: bold;
+}

@@ -1,0 +1,293 @@
+//会员公共样式
+.mm-content {
+  .go_or_down_list {
+    //margin-top: vw(8);
+    padding: 0 vw(10);
+    background: #fff;
+
+    .list_main {
+      .list_item {
+        height: vw(100);
+        background: #fff;
+        position: relative;
+        border-bottom: 1px solid $border_color;
+
+        .img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin: auto 0;
+          display: inline-block;
+          width: vw(90);
+        }
+
+        .list_item_content {
+          position: absolute;
+          left: vw(115);
+          top: 50%;
+          transform: translateY(-50%);
+
+          p {
+            font-size: vw(13);
+            height: vw(20);
+            line-height: vw(20);
+            color: $gray_color;
+
+            span {
+              font-size: vw(13);
+            }
+          }
+
+          p:nth-child(1) {
+            font-size: vw(16);
+            color: #000;
+          }
+        }
+
+        .listButton {
+          position: absolute;
+          top: vw(8);
+          right: 0;
+          padding: 0 vw(2);
+          border-radius: vw(5);
+        }
+      }
+    }
+
+    .list_more {
+
+      height: vw(40);
+      line-height: vw(40);
+
+      span {
+        color: $active_color;
+      }
+
+      .van-icon {
+        color: $gray_color;
+        font-size: vw(17);
+        float: right;
+        height: vw(40);
+        line-height: vw(40);
+      }
+    }
+  }
+}
+
+.list_header {
+  height: vw(45);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  margin-top: vw(8);
+  padding: 0 vw(10);
+  font-size: vw(14);
+
+  .list_box {
+    width: 100%;
+    padding: 0 vw(6);
+    border-bottom: 1px solid $border_color;
+  }
+
+  .list_name {
+    line-height: vw(45);
+  }
+
+  .list_name:first-of-type {
+    color: #909399;
+    margin-right: vw(10);
+  }
+
+  /*筛选*/
+  .select {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: vw(5);
+    border: 1px solid $theme-color;
+    color: $theme-color;
+    border-radius: vw(6);
+    line-height: 22px;
+    font-size: vw(14);
+  }
+
+  .vanBottom {
+    display: inline-block;
+    width: vw(100);
+    height: vw(30);
+    margin-left: vw(8);
+  }
+}
+
+
+//弹框布局
+.box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .main {
+    height: 0;
+    flex-grow: 1;
+    overflow-y: scroll;
+  }
+
+  .input {
+    width: 100%;
+    height: vw(40);
+    //line-height: vw(25);
+    border: none;
+    background: #F7F8FA;
+    padding: vw(10);
+    //width: 100%;
+  }
+
+  .type {
+    height: vw(30);
+    line-height: vw(30);
+    border-bottom: 1px solid $border_color;
+  }
+
+  .card_active {
+    border: 1px solid $theme-color !important;
+    color: #fff;
+    background: $theme-color !important;
+  }
+
+  .card_button {
+    //margin-right: vw(5);
+    //background: #f4f4f4;
+    //border: 1px solid #fff;
+    margin-top: vw(5);
+  }
+
+  #reset {
+    margin-right: vw(15);
+    background: $body_background_color;
+    color: #1989fa;
+  }
+}
+
+.dateInput {
+  height: vw(40);
+  border: none;
+  background: #F7F8FA;
+  padding: vw(10);
+  width: vw(100);
+  text-align: center;
+}
+
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+
+  div {
+    height: vw(50);
+    line-height: vw(50);
+  }
+}
+
+.yd-checklist-item:not(:last-child):after {
+  border: none !important;
+  background-image: none !important;
+}
+
+.yd-checklist-item {
+  margin-left: 0 !important;
+}
+
+.yd-checklist-item-icon {
+  display: block !important;
+}
+
+.screen {
+  background-color: $theme-color;
+
+  span {
+    color: #fff;
+  }
+}
+
+
+//查询
+.member_search {
+  padding: 0 vw(10);
+  font-size: vw(14);
+  height: vw(50);
+  line-height: vw(50);
+  background: #fff;
+  margin-top: vw(8);
+  //position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .input {
+    display: inline-block;
+    width: vw(200);
+    height: vw(40);
+    padding: vw(5) vw(10);
+    border: none;
+    background: #F7F8FA;
+    box-sizing: border-box;
+    border-radius: vw(6);
+  }
+
+  //span {
+  //  //display: block;
+  //}
+
+  .search_button {
+    background: $theme-color;
+    color: #fff;
+    font-size: vw(14);
+    width: vw(65);
+    height: vw(40);
+    line-height: vw(40);
+    border-radius: vw(6);
+  }
+}
+
+.time_class {
+  margin: vw(8) vw(8) 0;
+}
+
+//排序
+.list_box {
+  position: relative;
+
+  .paixu {
+    position: absolute;
+    top: 50%;
+    //right: vw(80);
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      i {
+        font-size: vw(12);
+        color: #ccc;
+      }
+
+      i:first-of-type {
+        margin-bottom: vw(-2);
+      }
+
+      i:last-of-type {
+        margin-top: vw(-2);
+      }
+
+      .paixuActive {
+        color: $theme-color;
+        font-weight: 700;
+      }
+    }
+  }
+}
+

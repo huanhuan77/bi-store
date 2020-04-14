@@ -1,0 +1,35 @@
+/*
+Error: Invalid GBK character "\xE4"
+        on line 1 of member-public.scss
+
+1: //会员公共样式
+2: .mm-content {
+3:   .go_or_down_list {
+4:     margin-top: vw(8);
+5:     padding: 0 vw(10);
+6:     background: #fff;
+
+Backtrace:
+member-public.scss:1
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/util.rb:1041:in `rescue in block in find_encoding_error'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/util.rb:1038:in `block in find_encoding_error'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/util.rb:1037:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/util.rb:1037:in `each_with_index'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/util.rb:1037:in `find_encoding_error'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/util.rb:765:in `check_sass_encoding'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:444:in `check_encoding!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:400:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:387:in `run'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/bin/sass:13:in `<top (required)>'
+C:/Ruby25-x64/bin/sass:23:in `load'
+C:/Ruby25-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE4\"\A         on line 1 of member-public.scss\A \A 1: //会员公共样式\A 2: .mm-content {\A 3:   .go_or_down_list {\A 4:     margin-top: vw(8);\A 5:     padding: 0 vw(10);\A 6:     background: #fff;"; }

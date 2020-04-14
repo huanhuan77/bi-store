@@ -1,0 +1,184 @@
+
+#main{
+ padding:0 vw(10);
+  margin: vw(10) 0;
+}
+
+//头部时间选择
+.time_header {
+  height: vw(50);
+  line-height: vw(50);
+  background: $theme-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 0 vw(15);
+  span {
+    margin: 0 vw(5);
+  }
+
+  .time_box {
+    display: flex;
+    align-items: center;
+    font-size: vw(14);
+    div {
+      border: 1px solid #fff;
+      border-radius: vw(15);
+      width: vw(120);
+      height: vw(30);
+      line-height: vw(30);
+      text-align: center;
+    }
+
+    div:active {
+      opacity: .6;
+    }
+  }
+
+  .timeRange :active {
+    opacity: .6;
+  }
+
+  .search{
+    font-size: vw(15);
+  }
+}
+
+//图标表格
+.content_table_box {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  border-radius: vw(5) vw(5) 0 0;
+
+  .content_table_item {
+    width: vw(118);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: vw(10) 0;
+
+    span {
+      color:$gray_color;
+      padding-left: vw(10);
+    }
+    //p {
+    //  height: vw(27);
+    //  line-height: vw(27);
+    //}
+    //.line3{
+    //  height: vw(35);
+    //  line-height: vw(35);
+    //}
+    .table_title{
+      height: vw(35);
+    }
+  }
+}
+
+.br {
+  border-right: 1px solid $border_color;
+}
+
+.bb {
+  border-bottom: 1px solid $border_color;
+}
+
+.number_fontSize {
+  font-size: vw(18);
+  font-weight: bold;
+}
+
+.icon {
+  font-size: vw(21);
+}
+//图标颜色
+.color_red{
+  color:#F46D6B;
+}
+.color_orange{
+color:#F7B651;
+}
+.color_theme{
+  color: $theme-color !important;
+}
+.up{
+  color: #05CF00 !important;
+  font-size: vw(14);
+   position: absolute;
+   right: vw(0);
+}
+.down{
+  color:#F46D6B !important;
+  font-size: vw(13);
+  position: absolute;
+  right: vw(0);
+}
+
+
+//图表样式
+.chart_box {
+  width: 100%;
+  height: vw(250);
+  line-height: vw(250);
+  text-align: center;
+  font-size: vw(30);
+  background: #fff;
+  border: 1px solid $border_color;
+  border-top: vw(8) solid $border_color;
+  color: #ddd;
+  padding: vw(5) 0;
+  .chart {
+    width: 100%;
+    height: vw(235);
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  .no_data {
+    height: vw(30);
+    font-size: vw(30);
+    font-weight: 400;
+  }
+}
+
+//表格
+/*表头*/
+.tableHead {
+  padding: 0 vw(10);
+  margin-top: vw(8);
+  height: auto;
+  color: $gray_color;
+  border-bottom: 1px solid $tableBorder;
+}
+
+
+/*滚动区域*/
+  .table {
+    padding: 0 vw(10);
+  }
+
+.table {
+  font-size: vw(13);
+  height: auto;
+  background: #fff;
+  padding: 0 vw(10);
+  table {
+    width: 100%;
+
+    td {
+      border-bottom: 1px solid $tableBorder;
+      text-align: center;
+      height: vw(30);
+      line-height: vw(30);
+      text-overflow: ellipsis;
+      vertical-align: middle;
+    }
+  }
+}
